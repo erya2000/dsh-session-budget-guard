@@ -1,5 +1,10 @@
 # dsh-session-budget-guard
 
+[English](README.md) | 中文
+
+[![test](https://github.com/erya2000/dsh-session-budget-guard/actions/workflows/test.yml/badge.svg)](https://github.com/erya2000/dsh-session-budget-guard/actions/workflows/test.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 用的**会话树预算 + 烧钱速率熔断**插件。
 
 一句 prompt 可以扇出成一棵子代理树，同时花钱。本插件盯住每棵树（root 会话 + 全部子代理后代），

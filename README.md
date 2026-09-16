@@ -1,5 +1,10 @@
 # dsh-session-budget-guard
 
+English | [中文](README.zh.md)
+
+[![test](https://github.com/erya2000/dsh-session-budget-guard/actions/workflows/test.yml/badge.svg)](https://github.com/erya2000/dsh-session-budget-guard/actions/workflows/test.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A per-session-tree budget **and burn-rate circuit breaker** for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
 One prompt can fan out into a tree of subagents that all spend money at once. This plugin watches each tree — the root session plus every subagent descendant — and refuses the *next* model request (or the next delegation) when either the tree's total spend or its spend **rate** crosses a limit you set.
