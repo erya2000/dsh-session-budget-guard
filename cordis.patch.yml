@@ -1,0 +1,24 @@
+# Bundle patch for dsh-session-budget-guard.
+#
+# `dsh plugin --profile web add dsh-session-budget-guard` reads this file and
+# inserts the row below into the profile tree. Edit the `config:` block to tune
+# thresholds — every key is documented in README.md and defaults live in
+# lib/rules.js (DEFAULT_CONFIG).
+- insert:
+    - id: session-budget-guard
+      name: dsh-session-budget-guard
+      config:
+        # notify = log + notification only; enforce = also refuses the next
+        # step, denies over-quota delegations/searches and stops the tree.
+        mode: notify
+        treeWarnCny: 20
+        treeStopCny: 50
+        rateWarnPerMin: 4
+        rateStopPerMin: 8
+        # Structure gates are OFF by default; set numbers to turn them on, e.g.
+        # maxDelegationDepth: 1   # subagents may not spawn subagents
+        # maxTreeNodes: 6         # at most 6 subagents per tree
+        # maxSearchesPerSession: 40
+        maxDelegationDepth: null
+        maxTreeNodes: null
+        maxSearchesPerSession: null

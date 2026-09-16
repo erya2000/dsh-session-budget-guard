@@ -1,0 +1,44 @@
+{
+  "name": "dsh-session-budget-guard",
+  "version": "0.1.0",
+  "description": "Per-session-tree budget and burn-rate circuit breaker for DeepSeek Harness: refuses the next model request or delegation when a tree's spend or spend rate crosses a limit.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./rules": {
+      "default": "./lib/rules.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "budget",
+    "cost",
+    "guard",
+    "subagent"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
