@@ -40,5 +40,14 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erya2000/dsh-session-budget-guard.git"
+  },
+  "author": "erya2000",
+  "bugs": {
+    "url": "https://github.com/erya2000/dsh-session-budget-guard/issues"
+  },
+  "homepage": "https://github.com/erya2000/dsh-session-budget-guard#readme"
 }

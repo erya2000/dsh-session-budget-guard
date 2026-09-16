@@ -17,7 +17,7 @@
 
 ```sh
 dsh plugin --profile web add dsh-session-budget-guard     # npm（发布后）
-dsh plugin --profile web add github:naizhierchou/dsh-session-budget-guard
+dsh plugin --profile web add github:erya2000/dsh-session-budget-guard
 ```
 
 或者直接用绝对路径挂本地目录（不需要安装）：

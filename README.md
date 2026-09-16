@@ -20,7 +20,7 @@ That is why there are two independent gates: **cumulative spend** and **spend ra
 
 ```sh
 dsh plugin --profile web add dsh-session-budget-guard     # npm (once published)
-dsh plugin --profile web add github:naizhierchou/dsh-session-budget-guard
+dsh plugin --profile web add github:erya2000/dsh-session-budget-guard
 ```
 
 Or mount it by path from a local checkout (no install step):
